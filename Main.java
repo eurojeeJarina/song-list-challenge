@@ -7,9 +7,13 @@ public class Main {
         Playlist playlist = new Playlist("My PlayList");
         playlist.printListOfAlbums();
 
-        playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(0).getArrayOfSongs().get(0));
-        playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(0).getArrayOfSongs().get(1));
+        //playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(0).getArrayOfSongs().get(0));
+       // playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(0).getArrayOfSongs().get(1));
         playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(0).getArrayOfSongs().get(2));
+
+       playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(1).getArrayOfSongs().get(0));
+        //playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(1).getArrayOfSongs().get(1));
+       // playlist.addSongsToPlayList(playlist.getAlbumArrayList().get(1).getArrayOfSongs().get(2));
 
         playlist.printPlayList();
 

@@ -2,9 +2,9 @@ package com.javacourse;
 
 public class Song {
     private String title;
-    private Double duration;
+    private double duration;
 
-    public Song(String title, Double duration) {
+    public Song(String title, double duration) {
         this.title = title;
         this.duration = duration;
     }
@@ -17,11 +17,18 @@ public class Song {
         this.title = title;
     }
 
-    public Double getDuration() {
+    public double getDuration() {
         return duration;
     }
 
-    public void setDuration(Double duration) {
+    public void setDuration(double duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.format("Title: %s \t" +
+                "Duration : %.2f", this.title, this.duration);
     }
 }

@@ -89,7 +89,7 @@ public class Playlist {
 
         while(j.hasNext())
         {
-            System.out.println("\tSong : (" +j.next().getTitle()+")");
+            System.out.println(j.next().toString());
         }
         System.out.println(" ");
     }
@@ -99,13 +99,13 @@ public class Playlist {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean goingForward = true;
-        
+
         ListIterator<Song> listIterator = theSongList.listIterator();
 
         if (theSongList.isEmpty()) {
             System.out.println("Error: Empty Lists.");
         } else {
-            System.out.println("Now Playing " + listIterator.next().getTitle());
+            System.out.println("Now Playing " + listIterator.next().toString());
            // printPlayList();
         }
 
@@ -127,7 +127,7 @@ public class Playlist {
                         goingForward = true;
                     }
                     if (listIterator.hasNext()) {
-                        System.out.println("Now Playing " + listIterator.next().getTitle());
+                        System.out.println("Now Playing " + listIterator.next().toString());
                     } else {
                         System.out.println("End of the list.");
                         goingForward = false;
@@ -144,7 +144,7 @@ public class Playlist {
                     }
                     if (listIterator.hasPrevious()) {
                         System.out.println("Now Playing " +
-                                listIterator.previous().getTitle());
+                                listIterator.previous().toString());
                     } else {
                         System.out.println("Start of the list.");
                         goingForward = true;
