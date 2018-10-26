@@ -7,4 +7,4 @@ of using the ArrayList & LinkedList.
 
 UPDATE:
 
-Maybe I will extend this program in the future where user can actually listen to songs.
+Maybe I will extend this program in the future, user can actually listen to songs.
